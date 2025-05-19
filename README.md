@@ -1,61 +1,93 @@
-# Super Trunfo em C – Estruturas de Decisão e Menus Interativos
 
-## 🎯 Objetivos
+# Super Trunfo em C
 
-- Desenvolver um programa que compare dois atributos de cartas do **Super Trunfo**, utilizando **estruturas de decisão** (`if`, `else`, `switch`).
-- Criar um menu interativo que permita ao jogador **selecionar os atributos** a serem comparados.
-- Evoluir o programa gradualmente:
-  - Iniciando com comparações simples (apenas um atributo);
-  - Ampliando para múltiplos atributos com estruturas **aninhadas e encadeadas**;
-  - Finalizando com lógica avançada, utilizando **operadores ternários** e decisões complexas.
+## 📌 Descrição
 
----
+Este projeto consiste em um jogo digital no estilo **Super Trunfo**, desenvolvido em linguagem **C**, com funcionalidades automatizadas via **scripts PowerShell**. Ele foi criado com fins didáticos e visa aplicar conceitos de lógica de programação, estrutura de dados e automação de tarefas.
 
-## 📘 Introdução
+## 🎯 Objetivo
 
-Bem-vindo ao desafio de programação onde você irá desenvolver um jogo **Super Trunfo** em linguagem **C**!
+Desenvolver um jogo de cartas que permita comparar atributos entre cartas aleatórias, declarando um vencedor a cada rodada. Inclui funcionalidades de:
+- Embaralhamento automático,
+- Comparação de atributos,
+- Contador de vitórias,
+- Automação de compilação e execução com PowerShell.
 
-Você foi contratado pela **TechNova**, uma empresa referência em inovação no setor de jogos, para aprimorar digitalmente o clássico Super Trunfo. Sua missão é construir um jogo **dinâmico e interativo**, com **comparação estratégica de atributos** e menus que guiem a experiência do jogador.
+## 🛠️ Tecnologias utilizadas
 
-No mercado de **Tecnologia da Informação**, dominar estruturas de decisão é essencial para criar sistemas que reagem a múltiplos cenários e entradas de forma inteligente. Este projeto foi pensado para te desenvolver nesse aspecto e te preparar para aplicações mais robustas no mundo real.
+- Linguagem C (GCC)
+- PowerShell (automatização)
+- Git (controle de versão)
+- Visual Studio Code (IDE recomendada)
 
----
+## 📂 Estrutura do projeto
 
-## 🧪 Cenário
+```
+supertrunfo_f/
+│
+├── src/                # Código-fonte principal (.c)
+├── include/            # Arquivos de cabeçalho (.h)
+├── scripts/            # Scripts PowerShell para build e execução
+├── assets/             # Recursos adicionais (ex: prints, logos)
+└── README.md           # Este documento
+```
 
-A **TechNova** decidiu modernizar o **Super Trunfo** para o mundo digital. A nova versão precisa de:
+## 🚀 Como executar
 
-- Uma **lógica de comparação robusta** entre os atributos das cartas;
-- **Menus interativos** que permitam ao jogador escolher quais atributos comparar;
-- Uma experiência mais **estratégica e envolvente**.
+### Pré-requisitos
 
-Você, como desenvolvedor, será o responsável por implementar todas essas melhorias utilizando **C** e aplicando **estruturas de decisão** com eficiência e criatividade.
+- GCC instalado no sistema
+- Git instalado (opcional, mas recomendado)
+- PowerShell (disponível no Windows por padrão)
 
----
+### Passos
 
-## 🧭 Sua Missão
+1. Clone o repositório:
 
-Desenvolver um programa em C que simule a mecânica do Super Trunfo, com as seguintes funcionalidades:
+```powershell
+git clone https://github.com/seuusuario/supertrunfo_f.git
+cd supertrunfo_f
+```
 
-### ✅ Fase 1 – Comparação simples
-- Comparar dois atributos numéricos de duas cartas.
-- Usar estruturas `if` e `if-else`.
+2. Execute o script de build:
 
-### ✅ Fase 2 – Comparação múltipla
-- Permitir a escolha de diferentes atributos por meio de **menu com `switch`**.
-- Usar estruturas aninhadas (`if` dentro de `if`) e encadeadas (`else if`).
+```powershell
+./scripts/build.ps1
+```
 
-### ✅ Fase 3 – Lógica avançada
-- Comparar **dois atributos ao mesmo tempo**.
-- Utilizar **operadores lógicos** e **operadores ternários** para decidir o vencedor.
-- Integrar todos os conceitos anteriores em uma estrutura mais completa e desafiadora.
+3. Execute o jogo:
 
----
+```powershell
+./scripts/run.ps1
+```
 
-## 🚀 Como usar
+## 📷 Exemplo de execução
 
-1. Clone ou baixe o repositório.
-2. Compile os arquivos `.c` com:
+![Exemplo de execução do jogo no terminal](assets/demo.gif)
 
-```bash
-gcc main.c cartas.c -o supertrunfo
+## 📚 Normas ABNT (resumo aplicado)
+
+- **Autor**: Maycon [... Sobrenome completo, se desejar]
+- **Ano de desenvolvimento**: 2025
+- **Tipo de documento**: Projeto acadêmico pessoal
+- **Formato de referência**:
+  > MAYCON. *Super Trunfo em C*. Projeto de desenvolvimento de software, 2025.
+
+## ✅ Status do projeto
+
+✔️ Em desenvolvimento  
+🔄 Automatizações em teste  
+📦 Versão inicial funcional
+
+## 🧠 Inspiração
+
+Inspirado no clássico jogo **Super Trunfo**, com adaptações digitais para simular partidas entre jogadores automatizados.
+
+## 🤝 Contribuição
+
+Para contribuir, faça um fork deste repositório, crie uma branch e envie um pull request. Sugestões são bem-vindas!
+
+## 📝 Licença
+
+Este projeto está sob a licença MIT. Consulte o arquivo `LICENSE` para mais detalhes.
+
